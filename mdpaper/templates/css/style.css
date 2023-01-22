@@ -1,0 +1,84 @@
+body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+}
+
+/* corners */
+.codehilite { background: black; }
+@media print { .codehilite { background-color: var(--color-canvas-subtle); } } /* disable! */
+
+.markdown-body .highlight pre,
+.markdown-body .codehilite pre, 
+.markdown-body pre {
+    padding: 0.5rem;
+}
+
+/* overrides */
+.markdown-body table { width: 100%; display: inline-table; }
+.markdown-body table th { text-align: left; }
+.markdown-body table thead tr { background-color: var(--color-canvas-subtle); }
+
+/*
+.markdown-body .page h1 { margin-top: 5rem; }
+.markdown-body .page:first-child h1 { margin-top: 2rem; }
+
+@media print { 
+    .markdown-body .page h1 { margin-top: 2rem; }
+    .markdown-body .page h1:first-child { margin-top: 0 !important; }
+}
+*/
+
+/* admonition */
+.admonition { padding: 0px 15px 15px 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; text-align: left; overflow: hidden; }
+.admonition-title { font-weight: bold; text-align: left; margin: -15px -15px 15px -15px; padding: 10px 15px 5px 15px; }
+.admonition-title::before { content: "!"; color: black; font-weight: normal; width: 18px; height: 18px; display: inline-block; margin-right: 7px; text-align: center; font-size: 17px; line-height: 20px; }
+.markdown-body .admonition *:last-child { margin-bottom: 0; }
+
+/* types */
+.admonition { color: #000000; background-color: #dddddd; border-color: #eeeeee; }
+.admonition .admonition-title { background: #aaaaaa; color: black; }
+.admonition .admonition-title::before { content: "?"; }
+
+.admonition.note { color: #000000; background-color: #d9edf7; border-color: #bce8f1; }
+.admonition.note .admonition-title { background: #6ab0de; color: black; }
+.admonition.note .admonition-title::before { content: "⏿"; }
+
+.admonition.warning { color: #000000; background-color: #fcf8e3; border-color: #fbeed5; }
+.admonition.warning .admonition-title { background: #f0b37e; color: black; }
+.admonition.warning .admonition-title::before { content: "⚠"; font-weight: bold; }
+
+.admonition.danger { color: #000000; background-color: #fdf3f2; border-color: #eed3d7; }
+.admonition.danger .admonition-title { background: #f29f97; color: black; }
+.admonition.danger .admonition-title::before { content: "🗲"; }
+
+.admonition.okay { color: #000000; background-color: #ddffdd; border-color: #eed3d7; }
+.admonition.okay .admonition-title { background: #59dd59; color: black; }
+.admonition.okay .admonition-title::before { content: "✔"; }
+
+/* .page */
+@media print {
+    table, img, .markdown-body .admonition,
+    blockquote, p, ul, ol {
+        page-break-inside: avoid;
+    }
+    @page {
+        size: A4 portrait;
+        margin: 8mm;
+    }
+    body {
+        width: 900px;
+        min-width: 900px;
+        max-width: 900px;
+    }
+
+    .markdown-body hr {
+        page-break-after: always;
+        opacity: 0;
+    }
+}
+
+
+
