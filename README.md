@@ -18,7 +18,7 @@ Installation
 In a virtual environment (i.e. `./env/`) you can install it this way:
 
     :::sh
-    pip install git+https://github.com/maxdoom-com/includemd.git
+    pip install git+https://github.com/maxdoom-com/mdpaper.git
 
 
 Usage
@@ -31,10 +31,8 @@ Usage
 Conversion to PDF
 ------------------------------------------------------------------------
 
-Create a `Makefile` that like this:
+See the Makefile in the docs.
 
-    :::Makefile
-    # TODO
 
 Supported markdown syntax
 ------------------------------------------------------------------------
