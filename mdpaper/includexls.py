@@ -39,10 +39,10 @@ class IncludeXLSPreprocessor(Preprocessor):
 
         for y in range(sheet.nrows):
             if y == 0: # headers...
-                lines.append( '| ' + ' | '.join([ sheet.cell_value(y, x) for x in range(sheet.ncols) ]) + ' |' )
+                lines.append( '| ' + ' | '.join([ str(sheet.cell_value(y, x)) for x in range(sheet.ncols) ]) + ' |' )
                 lines.append( '| ' + ' | '.join([ '---' ]*sheet.ncols) + ' |' )
             else: # content...
-                lines.append( '| ' + ' | '.join([ sheet.cell_value(y, x) for x in range(sheet.ncols) ]) + ' |' )
+                lines.append( '| ' + ' | '.join([ str(sheet.cell_value(y, x)) for x in range(sheet.ncols) ]) + ' |' )
 
         return lines
 
