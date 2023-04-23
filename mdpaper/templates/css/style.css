@@ -1,3 +1,7 @@
+.markdown-body {
+    --color-attention-subtle: yellow;
+}
+
 body {
     box-sizing: border-box;
     min-width: 200px;
@@ -89,5 +93,9 @@ body {
 .markdown-body .task-list-item input[type="checkbox"] {
   margin: 0 4px 0.25em -20px;
   vertical-align: middle;
+}
+
+.markdown-body mark {
+    padding: 0 0.4rem;
 }
 

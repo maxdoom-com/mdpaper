@@ -37,6 +37,25 @@ See the Makefile in the docs.
 Supported markdown syntax
 ------------------------------------------------------------------------
 
+Basically it supports everythin that ist supported by:
+
+- (markdown) tables
+- (markdown) admonition',
+- (markdown) toc',
+- (pymdownx) tilde',
+- (pymdownx) pymdownx.magiclink',
+- (pymdownx) pymdownx.tasklist',
+- (pymdownx) pymdownx.mark',
+- (markdown) codehilite',
+- (markdown) def_list',
+- (extension) IncludeMD
+- (extension) IncludeXLS
+
+
+
+
+Example
+------------------------------------------------------------------------
 
     :::text
     Test (MD)
@@ -131,24 +150,4 @@ Supported markdown syntax
 
     ... and a lot more!
 
-
-    {{% import "macros.htm.j2" as m %}}
-
-    {{{ m.checked("Lorem") }}}
-    {{{ m.checked("Ipsum") }}}
-        {{{ m.unchecked("dolor") }}}
-        {{{ m.unchecked("sit") }}}
-    {{{ m.unchecked("amet") }}}
-
-
-And in the file macros.htm.j2:
-
-    :::text
-    {{% macro checked(title) -%}}
-    - <input type="checkbox" style="margin-right: 0.5rem;" checked>{{{title}}}</li>
-    {{%- endmacro %}}
-
-    {{% macro unchecked(title) -%}}
-    - <input type="checkbox" style="margin-right: 0.5rem;" unchecked>{{{title}}}</li>
-    {{%- endmacro %}}
 

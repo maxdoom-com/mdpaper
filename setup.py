@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='mdpapaer',
-    version='0.0.3',
+    version='0.0.4',
     author='Nico Hoffmann',
     author_email='n-py-mdpaper@maxdoom.com',
     packages=['mdpaper',],
