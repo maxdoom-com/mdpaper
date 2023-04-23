@@ -3,6 +3,8 @@ import markdown, jinja2
 
 from .includemd import IncludeMD
 from .includexls import IncludeXLS
+from pymdownx.tasklist import TasklistExtension
+
 
 
 def render(template_file, **data):
@@ -42,7 +44,8 @@ def mdtohtml(infile):
             'toc',
             'pymdownx.tilde',
             'pymdownx.magiclink',
-            'pymdownx.tasklist',
+            # 'pymdownx.tasklist',
+            TasklistExtension(custom_checkbox=True),
             'pymdownx.mark',
             'codehilite',
             'def_list',
