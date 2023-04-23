@@ -43,6 +43,7 @@ def mdtohtml(infile):
             'pymdownx.tilde',
             'pymdownx.magiclink',
             'pymdownx.tasklist',
+            'pymdownx.mark',
             'codehilite',
             'def_list',
             IncludeMD(path=os.path.dirname(infile)),
