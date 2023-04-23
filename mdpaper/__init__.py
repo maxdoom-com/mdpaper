@@ -27,7 +27,7 @@ def mdtohtml(infile):
         text = f.read()
 
         # use jinja on the markdown text before interpreting it as markdown
-        text = render(text, {})
+        text = render_text(text, {})
 
         # compile html out of the markdown code
         html = markdown.markdown(text, extensions=[
