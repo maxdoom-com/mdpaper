@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='mdpapaer',
-    version='0.0.4',
+    version='0.0.5',
     author='Nico Hoffmann',
     author_email='n-py-mdpaper@maxdoom.com',
     packages=['mdpaper',],
@@ -17,7 +17,6 @@ setup(
         'Pygments',
         'pymdown-extensions',
         'xlrd',
-        'markdown-inline-graphviz',
     ],
     include_package_data=True,
     package_data={

@@ -46,7 +46,6 @@ def mdtohtml(infile):
             'pymdownx.mark',
             'codehilite',
             'def_list',
-            'InlineGraphviz',
             IncludeMD(path=os.path.dirname(infile)),
             IncludeXLS(path=os.path.dirname(infile)),
         ])
