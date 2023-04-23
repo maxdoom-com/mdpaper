@@ -1,0 +1,5 @@
+docs/env/
+docs/Makefile
+docs/test.pdf
+__pycache__/
+*.egg*

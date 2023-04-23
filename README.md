@@ -128,6 +128,24 @@ Example
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+
+    ---
+
+    Task List (pymarkdownx)
+    ------------------------------------------------------------------------
+
+    - [X] item 1
+        * [x] item A
+        * [ ] item B
+            more text
+            + [x] item a
+            + [ ] item b
+            + [x] item c
+        * [X] item C
+    - [ ] item 2
+    - [ ] item 3
+
+
     ---
 
     Include Test

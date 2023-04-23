@@ -1,8 +1,5 @@
 # select markdown files 3 levels deep
-MDFILES=					\
-	$(wildcard *.md)		\
-	$(wildcard */*.md)		\
-	$(wildcard */*/*.md)
+MDFILES=test.md
 
 # get the names of the pdf files to be created
 PDFFILES=$(patsubst %.md, %.pdf, $(MDFILES))
