@@ -24,7 +24,7 @@ def render_text(text, path):
     env.trim_blocks = True
     # env.lstrip_blocks = True
     tpl = env.from_string(text)
-    return tpl.render(**data)
+    return tpl.render()
 
 
 
