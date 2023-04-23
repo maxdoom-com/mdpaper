@@ -16,10 +16,10 @@ def render(template_file, **data):
 def render_text(text, path):
     env = jinja2.Environment(
         loader                  = jinja2.FileSystemLoader(path),
-        block_start_string      = '[%',
-        block_end_string        = '%]',
-        variable_start_string   = '[[',
-        variable_end_string     = ']]',
+        block_start_string      = '{{%',
+        block_end_string        = '%}}',
+        variable_start_string   = '{{{',
+        variable_end_string     = '}}}',
     )
     env.trim_blocks = True
     # env.lstrip_blocks = True
