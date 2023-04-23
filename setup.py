@@ -17,6 +17,7 @@ setup(
         'Pygments',
         'pymdown-extensions',
         'xlrd',
+        'python3-markdown-extension-graphviz',
     ],
     include_package_data=True,
     package_data={
